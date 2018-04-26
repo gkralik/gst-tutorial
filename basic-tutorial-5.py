@@ -8,7 +8,7 @@ gi.require_version('GdkX11', '3.0')
 gi.require_version('GstVideo', '1.0')
 from gi.repository import Gst, Gtk, GLib, GdkX11, GstVideo
 
-# http://docs.gstreamer.com/display/GstSDK/Basic+tutorial+5%3A+GUI+toolkit+integration
+# https://gstreamer.freedesktop.org/documentation/tutorials/basic/toolkit-integration.html
 
 
 class Player(object):
@@ -29,7 +29,7 @@ class Player(object):
 
         # set up URI
         self.playbin.set_property(
-            "uri", "http://docs.gstreamer.com/media/sintel_trailer-480p.webm")
+            "uri", "https://www.freedesktop.org/software/gstreamer-sdk/data/media/sintel_trailer-480p.webm")
 
         # connect to interesting signals in playbin
         self.playbin.connect("video-tags-changed", self.on_tags_changed)

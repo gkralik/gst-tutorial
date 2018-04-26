@@ -7,7 +7,7 @@ from gi.repository import Gst
 
 from helper import format_ns
 
-# http://docs.gstreamer.com/display/GstSDK/Basic+tutorial+4%3A+Time+management
+# https://gstreamer.freedesktop.org/documentation/tutorials/basic/time-management.html
 
 
 class Player(object):
@@ -35,7 +35,7 @@ class Player(object):
 
         # set the uri to play
         self.playbin.set_property(
-            "uri", "http://docs.gstreamer.com/media/sintel_trailer-480p.webm")
+            "uri", "https://www.freedesktop.org/software/gstreamer-sdk/data/media/sintel_trailer-480p.webm")
 
     def play(self):
         # dont start again if we are already playing

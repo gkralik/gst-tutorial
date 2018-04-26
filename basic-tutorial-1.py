@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# http://docs.gstreamer.com/pages/viewpage.action?pageId=327735
+# https://gstreamer.freedesktop.org/documentation/tutorials/basic/hello-world.html
 
 import gi
 gi.require_version('Gst', '1.0')
@@ -15,7 +15,7 @@ Gst.init(None)
 
 # build the pipeline
 pipeline = Gst.parse_launch(
-    "playbin uri=http://docs.gstreamer.com/media/sintel_trailer-480p.webm"
+    "playbin uri=https://www.freedesktop.org/software/gstreamer-sdk/data/media/sintel_trailer-480p.webm"
 )
 
 # start playing

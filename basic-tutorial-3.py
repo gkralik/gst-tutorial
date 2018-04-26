@@ -5,7 +5,7 @@ import gi
 gi.require_version('Gst', '1.0')
 from gi.repository import Gst
 
-# http://docs.gstreamer.com/display/GstSDK/Basic+tutorial+3%3A+Dynamic+pipelines
+# https://gstreamer.freedesktop.org/documentation/tutorials/basic/dynamic-pipelines.html
 
 
 class Player(object):
@@ -35,7 +35,7 @@ class Player(object):
 
         # set the URI to play
         self.source.set_property(
-            "uri", "http://docs.gstreamer.com/media/sintel_trailer-480p.webm")
+            "uri", "https://www.freedesktop.org/software/gstreamer-sdk/data/media/sintel_trailer-480p.webm")
 
         # connect to the pad-added signal
         self.source.connect("pad-added", self.on_pad_added)
